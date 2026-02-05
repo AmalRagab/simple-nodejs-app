@@ -12,7 +12,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_TOKEN }}
       - name: BuildDockerImage
-        run: docker build -t amalragab1/node-app:v3 .
+        run: docker build -t -p 8080:3000 amalragab1/node-app:v3 .
       - name: PushImage
         run: docker push amalragab1/node-app:v3
   test-process:
@@ -38,6 +38,6 @@ jobs:
           script: |
                   docker pull amalragab1/node-app:v3
                   
-                  docker run amalragab1/node-app:v3
+                  docker run -d amalragab1/node-app:v3
           
   
