@@ -39,6 +39,6 @@ jobs:
                   docker pull amalragab1/node-app:v3
                   docker stop nodeApp || true
                   docker rm nodeApp || true
-                  docker run -n nodeApp -d -p 8080:3000 amalragab1/node-app:v3
+                  docker run --name nodeApp -d -p 8080:3000 amalragab1/node-app:v3
           
   
