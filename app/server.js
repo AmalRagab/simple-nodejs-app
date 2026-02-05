@@ -49,7 +49,7 @@ app.get('/', (req, res) => {
         <body>
             <div class="container">
                 <h1>Welcome to My Node.js Application</h1>
-                <p class="highlight">Amal Ragab</p>
+                <p class="highlight">Eng Amal Ragab</p>
                 <p>I am <span class="highlight">DevOps learner</span>.</p>
                 <p>This is a <span class="highlight">nodejs app</span> for testing!</p>
                 <!-- Add the animated GIF below -->
