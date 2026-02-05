@@ -37,7 +37,6 @@ jobs:
           key: ${{secrets.AWS_KEY}}
           script: |
                   docker pull amalragab1/node-app:v3
-                  
                   docker run -d -p 8080:3000 amalragab1/node-app:v3
           
   
